@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Typegraphy</title>
+    <!-- bootstrap 5 css offline -->
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="bootstrap.js"></script>
+
+<body>
+    <!-- bootstrap 5 collapse examples -->
+
+    <!-- create click button to show collapse -->
+    <button class="btn btn-light  " data-bs-toggle="collapse" data-bs-target="#demo">Show / Hide</button>
+    <div class="collapse " id="demo">
+        <p class="text-danger  ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eius beatae adipisci maiores perferendis quaerat nisi, a accusamus est, exercitationem recusandae quisquam. Illum nam consequuntur, quos tenetur possimus saepe inventore.</p>
+    </div>
+
+    <!-- another exampel you can use <a> -->
+
+    <a href="#demo" class="btn btn-primary" data-bs-toggle="collapse">Simple collapsible</a>
+    <div id="demo" class="collapse">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+
+    <!-- another example of accordion -->
+    <div id="accordion">
+
+        <div class="card">
+          <div class="card-header">
+            <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+              Collapsible Group Item #1
+            </a>
+          </div>
+          <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+            <div class="card-body">
+              Lorem ipsum..
+            </div>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+              Collapsible Group Item #2
+            </a>
+          </div>
+          <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+            <div class="card-body">
+              Lorem ipsum..
+            </div>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+              Collapsible Group Item #3
+            </a>
+          </div>
+          <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+            <div class="card-body">
+              Lorem ipsum..
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    
+</body>
+</html>
